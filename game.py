@@ -39,6 +39,7 @@ class Game:
         self.player = Player(self, (50, 50), (8, 15)) # sets up the player entity
 
         self.tilemap = Tilemap(self, tile_size=16) # sets up the tilemap
+        self.tilemap.load('map.json')
 
         self.scroll = [0, 0] # sets up the scroll array, to be used for camera movement
 
